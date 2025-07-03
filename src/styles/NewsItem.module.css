@@ -1,0 +1,60 @@
+@import "./designSystem.module.css";
+
+.card {
+  background: var(--surface);
+  color: var(--text);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: var(--transition);
+  min-height: 420px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.dark {
+  background: var(--surface-dark);
+  color: var(--text-light);
+}
+.image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #eee;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+  flex: 1;
+}
+.title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: var(--primary);
+}
+.text {
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+  flex: 1;
+}
+.dark .text {
+  color: var(--text-light);
+}
+.readMore {
+  align-self: flex-start;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.readMore:hover {
+  background: var(--primary);
+}

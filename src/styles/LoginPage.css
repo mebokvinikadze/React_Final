@@ -1,0 +1,130 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #f3f4f6);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    background-color: #edf2f7;
+    color: #2d3748;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button {
+    padding: 10px 16px;
+    background-color: #3182ce;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .login-page.dark {
+    background-color: #343a40;
+    color: white;
+    background: linear-gradient(135deg, #2f3b44, #1c252f);
+  }
+  
+  .login-page.dark input {
+    background-color: #495057;
+    border: 1px solid #495057;
+    color: #f8f9fa;
+  }
+  
+  .login-page.dark button {
+    background-color: #2b6cb0;
+    color: white;
+  }
+  
+  .login-page.dark button:hover {
+    background-color: #3182ce;
+  }
+  
+  .login-page.dark .error-message {
+    color: #e53e3e;
+  }
+  
+  /* Consistent Input/Buttons Styles for Light and Dark Modes */
+  .input-light,
+  .input-dark {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .input-light {
+    border: 1px solid #cbd5e0;
+    background-color: #edf2f7;
+    color: #2d3748;
+  }
+  
+  .input-dark {
+    border: 1px solid #495057;
+    background-color: #495057;
+    color: #f8f9fa;
+  }
+  
+  .btn-light,
+  .btn-dark {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .btn-light {
+    background-color: #3182ce;
+    color: white;
+  }
+  
+  .btn-dark {
+    background-color: #2b6cb0;
+    color: white;
+  }
+  
+  .btn-light:hover,
+  .btn-dark:hover {
+    background-color: #2b6cb0;
+  }
+  
+  .text-light {
+    color: #f8f9fa;
+  }
+  
+  .text-dark {
+    color: #343a40;
+  }
+  

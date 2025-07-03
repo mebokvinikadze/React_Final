@@ -1,0 +1,180 @@
+.weather-page {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 28px 24px;
+  background: linear-gradient(135deg, #994242 0%, #7e0034 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(126, 0, 52, 0.18), 0 2px 10px rgba(0,0,0,0.12);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 8px rgba(126,0,52,0.12);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin: 32px 0 24px 0;
+  gap: 12px;
+}
+
+.city-input {
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border: 1.5px solid #7e0034;
+  border-radius: 8px;
+  width: 70%;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  margin-right: 0;
+  box-shadow: 0 2px 8px rgba(126,0,52,0.08);
+  transition: border 0.2s, background 0.2s;
+}
+
+.city-input:focus {
+  outline: none;
+  border-color: #b6b6c9;
+  background: rgba(230,232,240,0.25);
+  box-shadow: 0 0 0 2px #b6b6c955, 0 2px 8px rgba(80,80,120,0.10);
+  transition: border 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.city-input::placeholder {
+  color: #b6b6c9;
+  opacity: 1;
+  transition: color 0.2s;
+}
+
+.fetch-btn {
+  padding: 12px 22px;
+  background: linear-gradient(90deg, #b6b6c9 0%, #e6e8f0 100%);
+  color: #3a3a4a;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(80,80,120,0.10), 0 1.5px 8px rgba(0,0,0,0.04);
+  letter-spacing: 0.5px;
+  outline: none;
+}
+
+.fetch-btn:hover, .fetch-btn:focus {
+  background: linear-gradient(90deg, #e6e8f0 0%, #b6b6c9 100%);
+  color: #22223b;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 4px 16px rgba(80,80,120,0.13), 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.error-message {
+  color: #e57373;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 10px;
+  letter-spacing: 0.2px;
+  text-shadow: 0 1px 4px rgba(80,80,120,0.08);
+  transition: color 0.2s;
+}
+
+.weather-info, .forecast-info {
+  text-align: left;
+  padding: 20px 18px;
+  background: rgba(255,255,255,0.10);
+  border-radius: 14px;
+  margin-top: 18px;
+  box-shadow: 0 4px 16px rgba(126,0,52,0.10);
+  color: #fff;
+  backdrop-filter: blur(2px);
+}
+
+.forecast-list {
+  list-style: none;
+  padding: 0;
+}
+
+.forecast-item {
+  background: rgba(126,0,52,0.13);
+  padding: 13px 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(126,0,52,0.07);
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #c54b7e 0%, #c54b7e 100%);
+  color: #fff;
+}
+
+.dark-mode .title {
+  color: #fff;
+}
+
+.dark-mode .city-input {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  border-color: #a80046;
+}
+
+.dark-mode .city-input:focus {
+  border-color: #fff;
+  background: rgba(255,255,255,0.15);
+}
+
+.dark-mode .city-input::placeholder {
+  color: #e0b8c6;
+}
+
+.dark-mode .fetch-btn {
+  background: linear-gradient(90deg, #a80046 60%, #2d2d2d 100%);
+  color: #fff;
+}
+
+.dark-mode .fetch-btn:hover, .dark-mode .fetch-btn:focus {
+  background: linear-gradient(90deg, #c54b7e 60%, #c54b7e 100%);
+}
+
+.dark-mode .error-message {
+  color: #ff4d6d;
+}
+
+.dark-mode .weather-info, .dark-mode .forecast-info {
+  background: rgba(255,255,255,0.10);
+  color: #fff;
+}
+
+.dark-mode .forecast-item {
+  background: rgba(126,0,52,0.18);
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .weather-page {
+    padding: 16px 4vw;
+    max-width: 98vw;
+  }
+  .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .city-input {
+    width: 100%;
+    margin-right: 0;
+  }
+  .fetch-btn {
+    width: 100%;
+  }
+}
