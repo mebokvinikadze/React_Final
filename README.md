@@ -4,7 +4,9 @@ A modern, responsive news and weather web application built with **React** and *
 Enjoy a professional UI, smooth navigation, and real-time news and weather updates.
 
 ---
-![image](https://github.com/user-attachments/assets/28baa9a6-500f-4f18-809a-10186c5dfe49)![image](https://github.com/user-attachments/assets/ca0b7738-a87a-4d8f-aad7-a5ae681d359a)
+![462173439-28baa9a6-500f-4f18-809a-10186c5dfe49](https://github.com/user-attachments/assets/8e457e13-71be-41cc-aa5f-cdaf39fb4c39)
+![462173630-ca0b7738-a87a-4d8f-aad7-a5ae681d359a](https://github.com/user-attachments/assets/7732cb8c-74b9-444f-b3fc-aae3ba7c1bae)
+
 
 
 
