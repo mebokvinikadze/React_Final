@@ -92,12 +92,4 @@ src/
 - [GNews API](https://gnews.io/)
 - [OpenWeatherMap API](https://openweathermap.org/) (if used for weather)
 
----
-
-## 📄 License
-
-MIT License
-
----
-
 > **Made with ❤️ for BTU React Final Project**
