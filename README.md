@@ -1,4 +1,4 @@
-# 📰 BTU News Portal
+# 📰 Agenda News Portal
 
 A modern, responsive news and weather web application built with **React** and **Vite**.  
 Enjoy a professional UI, smooth navigation, and real-time news and weather updates.
